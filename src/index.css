@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen;
+  }
+
+  button {
+    @apply cursor-pointer hover:brightness-75 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  button,
+  a {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-300 mx-auto px-10 md:px-20 py-5;
+  }
+
+  .header-link {
+    @apply hover:text-pink-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-400 hover:after:w-full after:transition-all after:duration-300;
+  }
+
+  .hero-button {
+    @apply bg-linear-to-r from-pink-600 to-purple-600 py-3 px-6 rounded-xl flex-1 shadow-lg hover:shadow-xl;
+  }
+
+  .back-link {
+    @apply bg-zinc-600 py-2 px-4 text-white flex gap-0.5 hover:bg-zinc-700 transition items-center shadow-md rounded-xl font-medium hover:shadow-lg;
+  }
+}
+
+/* animasyonlar */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}

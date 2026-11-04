@@ -1,34 +1,79 @@
-# Kütüphaneler
+# 🦠 COVID-19 Live Tracking Map
 
-- axios
-- react-router-dom
-- react-icons
-- tailwindcss
-- millify
-- react-simple-maps
-- react-testing-library
-- jest
+An interactive COVID-19 tracking application built with **React, Redux Toolkit, and Vite**. The application displays global COVID-19 statistics and allows users to explore country-specific data through an interactive world map.
 
-# Kaynaklar
+---
 
-- İstatistik API: https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics
-- Ülke Covid API: https://covid-api.com/api/
+## 📌 Project Overview
 
-# Test Yazma Zamanı
+This project aims to practice modern React development, centralized state management with Redux Toolkit, external API integration, asynchronous data fetching, and unit testing with Jest.
 
-- Önce proje sonra testleri
-- Adım adım ilerle
-- - önce bileşen sonra test
-- - önce test sonra bileşen
+Users can select countries on the interactive world map and explore detailed COVID-19 statistics and country information.
 
-## TDD - Test Driven Development
+### Key Highlights
 
-- Test güdümlü geliştirme, yazılım geliştirme sürecinde testlerin koddan önce yazıldığı bir tekniktir
-- red to green test
+- Real-time global COVID-19 statistics
+- Interactive world map with country selection
+- Detailed country-specific COVID-19 data
+- Centralized state management with Redux Toolkit
+- Asynchronous API requests using `createAsyncThunk`
+- Unit testing with Jest and React Testing Library
+- API mocking for independent test environments
+- Responsive and modern user interface
 
-1. Test Yaz: İstenen özellikler için önce testler yazılır
-2. Test Çalıştır: Testler başarısız olur
-3. Kod Yaz: Testleri geçicek minimum kodu yaz
-4. Test Çalıştır: Tüm testlerin geçtiğini kontrol et
-5. Refeactor: Kodu iyileştir, testlerin hala geçtiğinden emin ol.
-# covid-map
+---
+
+## 🛠️ Technologies Used
+
+- React 18
+- Vite
+- Redux Toolkit
+- React Redux
+- React Router DOM
+- JavaScript (ES6+)
+- Axios
+- Tailwind CSS
+- React Simple Maps
+- Millify
+- Jest
+- React Testing Library
+- React Icons
+
+---
+
+## ✨ Features
+
+- 🌍 **Global Statistics:** Display worldwide total cases, active cases, and deaths.
+- 🗺️ **Interactive World Map:** Select countries directly from the map.
+- 📊 **Country Statistics:** View detailed COVID-19 statistics for selected countries.
+- 🏳️ **Country Information:** Display country flags, population, capital cities, and currency information.
+- 🔄 **API Integration:** Fetch data asynchronously using Axios and Redux Toolkit.
+- ⚡ **State Management:** Manage application state with Redux Toolkit.
+- ⏳ **Loading States:** Dedicated UI components for loading processes.
+- ⚠️ **Error Handling:** Handle API errors and unsuccessful requests.
+- 🧪 **Unit Testing:** Test components using Jest and React Testing Library.
+- 🔌 **API Mocking:** Mock API requests for independent testing.
+- 🎨 **Animations:** Smooth UI transitions with fade-in and slide-up effects.
+- 📱 **Responsive Design:** Provide an optimized experience across different screen sizes.
+
+---
+
+## 🧪 Testing
+
+Unit tests are implemented using **Jest** and **React Testing Library**.
+
+The tests cover the main UI components and application functionality, including:
+
+- Statistics components
+- Item components
+- Title components
+- Content components
+- API mocking and independent test scenarios
+
+Test files are located in the `src/__tests__` directory.
+
+---
+
+## 🎬 Preview
+
+![](covid-map.gif)
